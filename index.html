@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>shoutpong - ping pong with your voice</title>
+    </head>
+    <body>
+        <h1>shoutpong</h1>
+        <div id="form">
+            <label>
+                username
+                <input type="text" name="" id="username" />
+            </label>
+            <div id="game-buttons">
+                <button id="create">Create Game</button>
+                <div>
+                    <input
+                        type="text"
+                        name=""
+                        id="gamecode"
+                        placeholder="Insert game code"
+                    />
+                    <button id="join">Join Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="gamearea">
+            <span id="gamecode-label">Room Id: </span>
+            <div id="score">
+                <div id="score_player1">
+                    <span>player1: </span>
+                    <span>score</span>
+                </div>
+                <div id="score_player2">
+                    <span>player1: </span>
+                    <span>score</span>
+                </div>
+            </div>
+            <div id="pong">
+                <div id="player1"></div>
+                <div id="player2"></div>
+            </div>
+        </div>
+
+        <script src="./node_modules/colyseus.js/dist/colyseus.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

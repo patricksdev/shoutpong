@@ -21,6 +21,12 @@ export class MyRoom extends Room<MyRoomState> {
         } else {
             client.leave();
         }
+
+        if (this.state.players.size == this.maxClients) {
+            setTimeout(() => {
+                this.broadcast("start");
+            }, 2000);
+        }
     }
 
     onLeave(client: Client, consented: boolean) {

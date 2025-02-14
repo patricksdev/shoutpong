@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "colyseus.js": "^0.15.26"
+    "colyseus.js": "^0.15.26",
+    "meyda": "^5.6.3",
+    "tone": "^15.0.4"
   }
 }
